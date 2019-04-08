@@ -30,7 +30,7 @@ namespace Reversi.Classes
 
         #endregion
 
-       #region Constructors
+        #region Constructors
 
         public Board()
             : this(DEFAULT_BOARD_SIZE)
@@ -41,7 +41,7 @@ namespace Reversi.Classes
             this.mBoardSize = boardSize;
             this.mFieldColors = new DiscColor[boardSize, boardSize];
 
-            for (int rowIndex = 0; rowIndex < boardSize; rowIndex++)            
+            for (int rowIndex = 0; rowIndex < boardSize; rowIndex++)
             {
                 for (int columnIndex = 0; columnIndex < boardSize; columnIndex++)
                 {
@@ -73,7 +73,6 @@ namespace Reversi.Classes
         }
 
         #endregion
-         
 
         #region Properties
 
@@ -90,7 +89,7 @@ namespace Reversi.Classes
             get
             {
                 return this.mFieldColors[rowIndex, columnIndex];
-            }            
+            }
         }
 
         public int InvertedDiscsLastMove
@@ -143,7 +142,7 @@ namespace Reversi.Classes
                                 }
                             }
                         }
-                    }                
+                    }
                 }
             }
             return false;
@@ -215,7 +214,7 @@ namespace Reversi.Classes
                 }
             }
             return result;
-        }        
+        }
 
         private void InvertOpponentDisks(int rowIndex, int columnIndex, DiscColor color, out int invertedDiscsCount)
         {
@@ -232,31 +231,31 @@ namespace Reversi.Classes
                         }
                     }
                 }
-            }     
+            }
         }
         private void InvertDirection(
             int rowIndex, int columnIndex,
-            int rowIndexChange, int columnIndexChange, 
-            DiscColor color, 
+            int rowIndexChange, int columnIndexChange,
+            DiscColor color,
             ref int invertedDiscsCount)
         {
             DiscColor opositeColor = DiscColor.GetOpposite(color);
-            
+
             rowIndex += rowIndexChange;
-            columnIndex += columnIndexChange;            
+            columnIndex += columnIndexChange;
             while (this[rowIndex, columnIndex] == opositeColor)
             {
                 this.mFieldColors[rowIndex, columnIndex] = color;
                 invertedDiscsCount++;
-                
+
                 rowIndex += rowIndexChange;
-                columnIndex += columnIndexChange;                
+                columnIndex += columnIndexChange;
             }
         }
 
         public object Clone()
         {
-            return new Board(this);            
+            return new Board(this);
         }
 
         #endregion
