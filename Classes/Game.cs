@@ -40,3 +40,145 @@ namespace Reversi.Classes
         #endregion
 
 }
+        public Player Player1
+        {
+            get
+            {
+                return this.mPlayer1;
+            }
+        }
+
+        public Player Player2
+        {
+            get
+            {
+                return this.mPlayer2;
+            }
+        }
+
+        public Player CurrentPlayer
+        {
+            get
+            {
+                return this.mCurrentPlayer;
+            }
+        }
+
+        public bool IsFinished
+        {
+            get
+            {
+                return this.mIsFinished;
+            }
+        }
+
+        public bool IsStarted
+        {
+            get
+            {
+                return (this.CurrentPlayer != null) || this.IsFinished;
+            }
+        }
+
+        public bool IsStopped
+        {
+            get
+            {
+                return this.mIsStopped;
+            }
+        }
+
+        public bool IsPaused
+        {
+            get
+            {
+                return this.mIsPaused;
+            }
+        }
+
+        #endregion
+
+        #region Methods
+
+        public Player CreatePlayer1(PlayerProperties properties)
+        {
+            this.mPlayer1 = this.CreatePlayer(properties, DiscColor.Black);
+            return this.mPlayer1;
+        }
+
+        public Player CreatePlayer2(PlayerProperties properties)
+        {
+            this.mPlayer2 = this.CreatePlayer(properties, DiscColor.White);
+            return this.mPlayer2;
+        }
+
+        private Player CreatePlayer(PlayerProperties properties, DiscColor color)
+        {
+            switch (properties.Type)
+            {
+                case PlayerType.Human:
+                    return new HumanPlayer(this, color, properties.Name);
+                    
+                case PlayerType.Computer:
+                    return new ComputerPlayer(this, color, properties.Name, properties.MaxDepth);
+            }
+
+            return null;
+        }
+
+
+        public bool Start()
+        {
+            if ((this.Player1 != null) && (this.Player2 != null))
+            {
+                this.Board.MoveFinished += new FieldColorEventHandler(this.OnMoveFinished);
+
+                if (this.Started != null)
+                {
+                    this.Started();
+                }
+
+                this.SetPlayerToMove(this.Player1);                               
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private void SetPlayerToMove(Player player)
+        {
+            this.mCurrentPlayer = player;
+
+            if (this.MoveStarted != null)
+            {
+                this.MoveStarted();
+            }
+
+            this.CurrentPlayer.StartMove();
+        }
+
+        public void Stop()
+        {
+            this.mIsStopped = true;
+        }
+
+        public void Pause()
+        {
+            if (!this.IsFinished && !this.IsStopped)
+            {
+                this.mIsPaused = true;
+            }
+        }
+
+        public void Continue()
+        {
+            if (!this.IsFinished && !this.IsStopped)
+            {
+                this.mIsPaused = false;
+                this.SetPlayerToMove(this.CurrentPlayer);
+            }
+        }
+
+        #endregion
