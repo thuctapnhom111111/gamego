@@ -39,7 +39,16 @@ namespace Reversi.Classes
 
         #endregion
 
-}
+        #region Properties
+
+        public Board Board
+        {
+            get
+            {
+                return this.mBoard;
+            }
+        }
+
         public Player Player1
         {
             get
@@ -118,7 +127,7 @@ namespace Reversi.Classes
             {
                 case PlayerType.Human:
                     return new HumanPlayer(this, color, properties.Name);
-                    
+
                 case PlayerType.Computer:
                     return new ComputerPlayer(this, color, properties.Name, properties.MaxDepth);
             }
@@ -138,7 +147,7 @@ namespace Reversi.Classes
                     this.Started();
                 }
 
-                this.SetPlayerToMove(this.Player1);                               
+                this.SetPlayerToMove(this.Player1);
                 return true;
             }
             else
@@ -182,3 +191,40 @@ namespace Reversi.Classes
         }
 
         #endregion
+
+        #region Events Handling
+
+        private void OnMoveFinished(int rowIndex, int columnIndex, DiscColor color)
+        {
+            if (!this.mIsStopped)
+            {
+                if (this.MoveFinished != null)
+                {
+                    this.MoveFinished(rowIndex, columnIndex, color);
+                }
+
+                Player opositePlayer = (this.CurrentPlayer == this.Player1) ? this.Player2 : this.Player1;
+                if (opositePlayer.CanMove())
+                {
+                    this.SetPlayerToMove(opositePlayer);
+                }
+                else if (this.CurrentPlayer.CanMove())
+                {
+                    this.SetPlayerToMove(this.CurrentPlayer);
+                }
+                else
+                {
+                    this.mCurrentPlayer = null;
+                    this.mIsFinished = true;
+
+                    if (this.Finished != null)
+                    {
+                        this.Finished();
+                    }
+                }
+            }
+        }
+
+        #endregion
+    }
+}
