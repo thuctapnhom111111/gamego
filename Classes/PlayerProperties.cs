@@ -1,26 +1,35 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace Reversi.Classes
 {
-    [Serializable]
-    public class PlayerProperties
+    class ComputerPlayer : Player
     {
-        public readonly PlayerType Type;
-        public readonly string Name;
-        public readonly int MaxDepth;
+        #region Static
 
-        public PlayerProperties(PlayerType type, string name, int maxDepth)
+        public static readonly int MinDepth = 2;
+        public static readonly int MaxDepth = 7;
+
+        #endregion
+
+        #region ReadOnly
+
+        private int mMaxDepth;
+
+        #endregion
+
+        #region Constructors
+
+        public ComputerPlayer(Game game, DiscColor color, string name, int maxDepth)
+            : base(game, color, name)
         {
-            this.Type = type;
-            this.Name = name;
-            this.MaxDepth = maxDepth;
+            this.mMaxDepth = maxDepth;
         }
 
-        public PlayerProperties(PlayerType type, string name)
-            : this(type, name, 2)
-        { }
+        #endregion
+
         #region Properties
 
         public override PlayerType Type
