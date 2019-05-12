@@ -1,0 +1,42 @@
+C:\Users\tayhl\Downloads\Reversi_AI\Reversi\Reversi\bin\Debug\Reversi.exe
+C:\Users\tayhl\Downloads\Reversi_AI\Reversi\Reversi\bin\Debug\Reversi.pdb
+C:\Users\tayhl\Downloads\Reversi_AI\Reversi\Reversi\obj\Debug\Reversi.csprojAssemblyReference.cache
+C:\Users\tayhl\Downloads\Reversi_AI\Reversi\Reversi\obj\Debug\Reversi.Controls.BoardControl.resources
+C:\Users\tayhl\Downloads\Reversi_AI\Reversi\Reversi\obj\Debug\Reversi.Controls.BoardFieldControl.resources
+C:\Users\tayhl\Downloads\Reversi_AI\Reversi\Reversi\obj\Debug\Reversi.Forms.MainForm.resources
+C:\Users\tayhl\Downloads\Reversi_AI\Reversi\Reversi\obj\Debug\Reversi.Controls.PlayerInfoControl.resources
+C:\Users\tayhl\Downloads\Reversi_AI\Reversi\Reversi\obj\Debug\Reversi.Controls.PlayerPropertiesControl.resources
+C:\Users\tayhl\Downloads\Reversi_AI\Reversi\Reversi\obj\Debug\Reversi.Forms.StartNewGameForm.resources
+C:\Users\tayhl\Downloads\Reversi_AI\Reversi\Reversi\obj\Debug\Reversi.Properties.Resources.resources
+C:\Users\tayhl\Downloads\Reversi_AI\Reversi\Reversi\obj\Debug\Reversi.csproj.GenerateResource.cache
+C:\Users\tayhl\Downloads\Reversi_AI\Reversi\Reversi\obj\Debug\Reversi.csproj.CoreCompileInputs.cache
+C:\Users\tayhl\Downloads\Reversi_AI\Reversi\Reversi\obj\Debug\Reversi.exe
+C:\Users\tayhl\Downloads\Reversi_AI\Reversi\Reversi\obj\Debug\Reversi.pdb
+C:\Users\tayhl\Downloads\Game Go\Reversi\Reversi\bin\Debug\Reversi.exe
+C:\Users\tayhl\Downloads\Game Go\Reversi\Reversi\bin\Debug\Reversi.pdb
+C:\Users\tayhl\Downloads\Game Go\Reversi\Reversi\obj\Debug\Reversi.csprojAssemblyReference.cache
+C:\Users\tayhl\Downloads\Game Go\Reversi\Reversi\obj\Debug\Reversi.Controls.BoardControl.resources
+C:\Users\tayhl\Downloads\Game Go\Reversi\Reversi\obj\Debug\Reversi.Controls.BoardFieldControl.resources
+C:\Users\tayhl\Downloads\Game Go\Reversi\Reversi\obj\Debug\Reversi.Forms.MainForm.resources
+C:\Users\tayhl\Downloads\Game Go\Reversi\Reversi\obj\Debug\Reversi.Controls.PlayerInfoControl.resources
+C:\Users\tayhl\Downloads\Game Go\Reversi\Reversi\obj\Debug\Reversi.Controls.PlayerPropertiesControl.resources
+C:\Users\tayhl\Downloads\Game Go\Reversi\Reversi\obj\Debug\Reversi.Forms.StartNewGameForm.resources
+C:\Users\tayhl\Downloads\Game Go\Reversi\Reversi\obj\Debug\Reversi.Properties.Resources.resources
+C:\Users\tayhl\Downloads\Game Go\Reversi\Reversi\obj\Debug\Reversi.csproj.GenerateResource.cache
+C:\Users\tayhl\Downloads\Game Go\Reversi\Reversi\obj\Debug\Reversi.csproj.CoreCompileInputs.cache
+C:\Users\tayhl\Downloads\Game Go\Reversi\Reversi\obj\Debug\Reversi.exe
+C:\Users\tayhl\Downloads\Game Go\Reversi\Reversi\obj\Debug\Reversi.pdb
+C:\Users\tayhl\Downloads\Code Game\Game Go\Game Go\Reversi\Reversi\bin\Debug\Reversi.exe
+C:\Users\tayhl\Downloads\Code Game\Game Go\Game Go\Reversi\Reversi\bin\Debug\Reversi.pdb
+C:\Users\tayhl\Downloads\Code Game\Game Go\Game Go\Reversi\Reversi\obj\Debug\Reversi.csprojAssemblyReference.cache
+C:\Users\tayhl\Downloads\Code Game\Game Go\Game Go\Reversi\Reversi\obj\Debug\Reversi.Controls.BoardControl.resources
+C:\Users\tayhl\Downloads\Code Game\Game Go\Game Go\Reversi\Reversi\obj\Debug\Reversi.Controls.BoardFieldControl.resources
+C:\Users\tayhl\Downloads\Code Game\Game Go\Game Go\Reversi\Reversi\obj\Debug\Reversi.Forms.MainForm.resources
+C:\Users\tayhl\Downloads\Code Game\Game Go\Game Go\Reversi\Reversi\obj\Debug\Reversi.Controls.PlayerInfoControl.resources
+C:\Users\tayhl\Downloads\Code Game\Game Go\Game Go\Reversi\Reversi\obj\Debug\Reversi.Controls.PlayerPropertiesControl.resources
+C:\Users\tayhl\Downloads\Code Game\Game Go\Game Go\Reversi\Reversi\obj\Debug\Reversi.Forms.StartNewGameForm.resources
+C:\Users\tayhl\Downloads\Code Game\Game Go\Game Go\Reversi\Reversi\obj\Debug\Reversi.Properties.Resources.resources
+C:\Users\tayhl\Downloads\Code Game\Game Go\Game Go\Reversi\Reversi\obj\Debug\Reversi.csproj.GenerateResource.cache
+C:\Users\tayhl\Downloads\Code Game\Game Go\Game Go\Reversi\Reversi\obj\Debug\Reversi.csproj.CoreCompileInputs.cache
+C:\Users\tayhl\Downloads\Code Game\Game Go\Game Go\Reversi\Reversi\obj\Debug\Reversi.exe
+C:\Users\tayhl\Downloads\Code Game\Game Go\Game Go\Reversi\Reversi\obj\Debug\Reversi.pdb
