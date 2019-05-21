@@ -9,4 +9,3 @@
 ---
   
 Project được code bằng ngôn ngữ `C#`
-==text==
