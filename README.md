@@ -1,7 +1,11 @@
-# gamego
-Game cờ vây 
+# Gamego
+##Game cờ vây 
 
-Nhóm gồm có 3 người :
--Tạ Huy Hùng
--Trần Hải Long
--Ngô Hoàng Việt	
+---
+
+==**Nhóm gồm có 3 người :**==
+1. *Tạ Huy Hùng*
+2. *Trần Hải Long*
+3. *Ngô Hoàng Việt*	
+
+  
