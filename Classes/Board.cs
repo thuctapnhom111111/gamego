@@ -9,6 +9,7 @@ namespace Reversi.Classes
     public class Board : ICloneable
     {
         #region ReadOnly
+        int A;
 
         public const int DEFAULT_BOARD_SIZE = 8;
 
@@ -147,6 +148,7 @@ namespace Reversi.Classes
             }
             return false;
         }
+        // kiem tra xem co danh dc khong
         private bool CheckDirection(int rowIndex, int columnIndex, int rowIndexChange, int columnIndexChange, DiscColor color)
         {
             bool areOpositeColorDiscsFound = false;
